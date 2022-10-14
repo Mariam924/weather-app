@@ -25,6 +25,9 @@
       .mobile-navigation button{
         display: none;
       }
+     .menu-div .menu{
+        display: none !important;
+      }
 
 }
 
