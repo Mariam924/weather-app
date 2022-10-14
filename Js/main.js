@@ -1,6 +1,9 @@
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var classes = ["today forecast-item", "forecast-item special-item", "forecast-item"]
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var menu = document.getElementById("mob-menu");
+var logo = document.getElementById("mob-menu");
+
 
 async function search(city) {
     let result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${city}&days=3`);
@@ -27,7 +30,7 @@ function displayCurrent(loc, curr) {
             </div> 
             <div class="forecast-content" id="current">
                 <div class="location">${loc.name}</div>
-                <div class="degree d-flex justify-content-center align-items-center">
+                <div class="degree d-flex justify-content-center align-items-center flex-wrap">
                     <div class="num">${curr.temp_c}<sup>o</sup>C</div>
 
                     <div class="forecast-icon">
@@ -73,3 +76,14 @@ function displayNextDays(arr) {
     console.log(container);
 }
 search("cairo");
+
+
+document.getElementById("mob-btn").addEventListener('click', function(){
+
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+        logo.style.display = 'block'
+      } else {
+        menu.style.display = 'none';
+      }
+})
