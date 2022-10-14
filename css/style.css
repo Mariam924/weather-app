@@ -1,0 +1,225 @@
+/* ----------------------------------- General ------------------------------------------ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #2b314f;
+}
+a {
+    text-decoration: none;
+    color: #009ad8;
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: normal;
+}
+.container{
+    width: 85% !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul, p {
+    margin: 0;
+    padding-left: 0;
+}
+
+
+/* ----------------------------------------- header ----------------------------------- */
+/* ---- nav logo -------- */
+
+.header{
+    padding: 30px 0;
+}
+
+.logo-text{
+    margin-left: 15px;
+
+}
+.weather-title {
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    color: white;
+}
+.weather-desc {
+    font-size: 0.7142857143em;
+    color: #bfc1c8;
+}
+
+/* ------ nav menu ------ */
+
+.header-ancors .menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.header-ancors .menu .menu-item.current-menu-item a, .header-ancors .menu .menu-item:hover a {
+    border-color: #009ad8;
+    color: #009ad8;
+   
+}
+.header-ancors .menu .menu-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s ease;
+    font-weight: 400;
+    margin-left: 10px !important;
+    font-size: 16px !important;
+}
+
+/* mobile navigation */
+.mobile-navigation{
+    padding: 30px 0px;
+    display: none;
+}
+
+/* ---------------------------------------- form ---------------------------------------- */
+
+.hero {
+    background-image: url(../imgs/shanghai-china-city-4k_1560535779.jpg);
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+.search-txt {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e233b;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.search-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border-radius: 30px;
+    color: white;
+    background: #009ad8;
+    font-size: 16px;
+}
+
+/* ----------------------------------------- table -------------------------------------- */
+
+.forecast-all-items {
+    width: 100%;
+    background: #272d4c;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.forecast-item {
+    width: 33.33%;
+ 
+}
+.forecast-start {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.forecast-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.today .forecast-content{
+    padding-left: 40px;
+}
+.location {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.degree {
+    font-size: 1.7em;
+    color: white;
+    font-weight: 700;
+}
+.num {
+    font-size: 5.8rem;
+    margin-right: 30px;
+}
+.w-desc {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.forecast-item span {
+    margin-right: 20px;
+}
+.forecast-item span img {
+    margin-right: 5px;
+}
+.special-item{
+    background: #1e233b;
+}
+
+/* -------------------------------------- footer ---------------------------------------- */
+
+.footer {
+    background: #2b314f;
+    padding: 50px 0;
+    padding-bottom: 70px;
+}
+.subscribe-part {
+    position: relative;
+    margin-bottom: 30px;
+}
+.sub-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0px !important;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1e233b;
+    color: #009ad8;
+    transition: 0.3s ease;
+    font-size: 1.4285714286em;
+    margin-right:10px;
+}
+.icon:hover a{
+    color: aliceblue;
+}
+.icon:hover {
+    background: #009ad8;
+    color: white !important;
+}
+.footer-txt{
+    font-weight: 400;
+}
