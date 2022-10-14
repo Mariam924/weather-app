@@ -32,7 +32,7 @@
 
         <div class="header ">
             <div class="container d-flex justify-content-between align-items-center">
-                <div class="header-logo d-flex justify-center-between align-items-center">
+                <div class="header-logo d-flex justify-center-between align-items-center" id="logo">
                     <div class="logo-img">
                         <img src="imgs/logo.png" alt="logo" width="64" height="38">
                     </div>
@@ -51,14 +51,19 @@
                     </ul>
                 </div>
                 <div class="mobile-navigation">
-                    <ul class="menu">
-                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item"><a href="#">News</a></li>
-                        <li class="menu-item"><a href="#">Live cameras</a></li>
-                        <li class="menu-item"><a href="#">Photos</a></li>
-                        <li class="menu-item"><a href="#">Contact</a></li>
-                    </ul>
+                    <button type="button" class="menu-toggle" id="mob-btn">
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </div>
+            </div>
+            <div class="text-center menu-div d-block">
+                <ul class="menu" id="mob-menu">
+                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="#">News</a></li>
+                    <li class="menu-item"><a href="#">Live cameras</a></li>
+                    <li class="menu-item"><a href="#">Photos</a></li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
         <div class="hero">
