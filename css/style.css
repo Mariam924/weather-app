@@ -86,6 +86,43 @@ ul, p {
     display: none;
 }
 
+.menu-div .menu {
+    background: #1e233b;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    width: 100%;
+    border: none;
+  }
+  .menu a {
+    padding: 20px;
+    display: block;
+    color: white;
+  }
+  .menu-div .menu .menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .menu{
+    border-bottom: none;
+  }
+  .menu .menu-item.current-menu-item a {
+    color: #009ad8;
+  }
+  .mobile-navigation button{
+    display: none;
+  }
+  .menu-toggle{
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    transition: 0.3s ease;
+    outline: none;
+  }
+
 /* ---------------------------------------- form ---------------------------------------- */
 
 .hero {
@@ -131,7 +168,6 @@ ul, p {
 }
 .forecast-item {
     width: 33.33%;
- 
 }
 .forecast-start {
     background: rgba(0, 0, 0, 0.1);
@@ -159,7 +195,7 @@ ul, p {
     font-weight: 700;
 }
 .num {
-    font-size: 5.8rem;
+    font-size: 5.5rem;
     margin-right: 30px;
 }
 .w-desc {
