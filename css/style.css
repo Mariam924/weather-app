@@ -93,8 +93,9 @@ ul, p {
     border-radius: 10px;
     overflow: hidden;
     display: none;
-    width: 100%;
+    width: 80%;
     border: none;
+    margin: auto;
   }
   .menu a {
     padding: 20px;
